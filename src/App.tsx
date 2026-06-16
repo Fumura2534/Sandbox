@@ -56,7 +56,6 @@ function App() {
           <Home />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          Item Two
           <Chess />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
