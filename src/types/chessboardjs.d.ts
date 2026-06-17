@@ -1,6 +1,7 @@
-import type { ChessBoardFactory } from '@types/chessboardjs';
-
 declare module 'chessboardjs' {
-  const ChessBoard: ChessBoardFactory;
-  export default ChessBoard;
+  export interface BoardConfig {
+    [key: string]: any;
+  }
+
+  export default function ChessBoard(containerElOrId: any, config?: BoardConfig): any;
 }
